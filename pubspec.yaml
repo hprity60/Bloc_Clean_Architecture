@@ -1,4 +1,4 @@
-name: clean_architecture
+name: bloc_clean_architecture
 description: A new Flutter project.
 
 publish_to: 'none'
@@ -9,7 +9,6 @@ environment:
   sdk: ">=2.13.0 <3.0.0"
 
 dependencies:
-  build_runner: ^2.1.5
   cached_network_image: ^3.2.2
   cupertino_icons: ^1.0.2
   dartz: ^0.10.0
@@ -34,6 +33,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   functional_enum: ^1.1.4
+  build_runner: ^2.1.5
   hive_generator: ^1.1.1
   injectable_generator: ^1.5.2
   json_serializable: ^6.1.1
