@@ -1,0 +1,43 @@
+name: clean_architecture
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.13.0 <3.0.0"
+
+dependencies:
+  build_runner: ^2.1.5
+  cached_network_image: ^3.2.2
+  cupertino_icons: ^1.0.2
+  dartz: ^0.10.0
+  dio: ^4.0.6
+  equatable: ^2.0.3
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.1
+  flutter_localizations:
+    sdk: flutter
+  functional_enum_annotation: ^1.2.2
+  get_it: ^7.2.0
+  go_router: ^4.4.1
+  hive: ^2.0.4
+  hive_flutter: ^1.1.0
+  http: ^0.13.4
+  path_provider: ^2.0.8
+  stream_transform: ^2.0.0
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+  functional_enum: ^1.1.4
+  hive_generator: ^1.1.1
+  injectable_generator: ^1.5.2
+  json_serializable: ^6.1.1
+  mockito: ^5.0.16
+
+flutter:
+  uses-material-design: true
