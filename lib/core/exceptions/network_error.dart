@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 
+import 'app_exception.dart';
 
 /// Generic network exception.
 ///
@@ -8,7 +9,8 @@ import 'package:flutter/foundation.dart';
 /// error [T] such as a validation error returned from a server.
 @immutable
 abstract class NetworkException<T>
-    with _HelperMixin<T> {
+    with _HelperMixin<T>
+    implements AppException {
   /// It occurs when a request is successfully made to a server and an error is
   /// returned from the server. For example, 404 (not found) response.
   ///
@@ -37,7 +39,14 @@ abstract class NetworkException<T>
   /// We don't want any other class to extend this class.
   const NetworkException._();
 
-
+  @override
+  String toString() {
+    if (this is _ApiException<T>) {
+      final error = (this as _ApiException<T>).error;
+      return '$runtimeType($error)';
+    }
+    return '$runtimeType()';
+  }
 }
 
 class _ApiException<T> extends NetworkException<T> {

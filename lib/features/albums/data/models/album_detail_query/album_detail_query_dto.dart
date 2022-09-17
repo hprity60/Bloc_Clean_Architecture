@@ -4,7 +4,6 @@ import 'package:json_annotation/json_annotation.dart';
 import '../../../domain/entities/album.dart';
 import '../../../domain/entities/album_detail_query.dart';
 
-
 part 'album_detail_query_dto.g.dart';
 
 @JsonSerializable()
